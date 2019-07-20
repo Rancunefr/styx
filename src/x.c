@@ -21,7 +21,7 @@ static char *argv0;
 #include "win.h"
 #include "config_cmake.h"
 
-/* types used in config.h */
+/* types used in settings.h */
 typedef struct {
 	uint mod;
 	KeySym keysym;
@@ -49,7 +49,7 @@ typedef struct {
 #define XK_NO_MOD     0
 #define XK_SWITCH_MOD (1<<13)
 
-/* function definitions used in config.h */
+/* function definitions used in settings.h */
 static void clipcopy(const Arg *);
 static void clippaste(const Arg *);
 static void numlock(const Arg *);
@@ -58,8 +58,8 @@ static void zoom(const Arg *);
 static void zoomabs(const Arg *);
 static void zoomreset(const Arg *);
 
-/* config.h for applying patches and the configuration. */
-#include "config.h"
+/* settings.h for applying patches and the configuration. */
+#include "settings.h"
 
 /* XEMBED messages */
 #define XEMBED_FOCUS_IN  4
@@ -1890,7 +1890,7 @@ kpress(XEvent *ev)
 		}
 	}
 
-	/* 2. custom keys from config.h */
+	/* 2. custom keys from settings.h */
 	if ((customkey = kmap(ksym, e->state))) {
 		ttywrite(customkey, strlen(customkey), 1);
 		return;

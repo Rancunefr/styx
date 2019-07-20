@@ -15,7 +15,7 @@ static int borderpx = 2;
  * 2: utmp option
  * 3: SHELL environment variable
  * 4: value of shell in /etc/passwd
- * 5: value of shell in config.h
+ * 5: value of shell in settings.h
  */
 static char *shell = "/bin/sh";
 char *utmp = NULL;
