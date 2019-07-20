@@ -1,26 +1,16 @@
 # styx
 
-Styx is a simple X terminal 
-
-## Installation
-
-Edit config.mk to match your local setup (styx is installed into
-the /usr/local namespace by default).
-
-Afterwards enter the following command to build and install styx (if
-necessary as root):
-
-    make clean install
+Styx is a simple X terminal, based on st.
 
 
-## Running st
+## Build/Install Instructions
 
-If you did not install styx with make clean install, you must compile
-the styx terminfo entry with the following command:
-
-    tic -sx styx.info
-
-See the man page for additional details.
+- git clone git@github.com:GlaconBleu/styx.git
+- cd styx
+- cd build
+- cmake ..
+- make
+- sudo make install
 
 ## Credits
 
