@@ -90,7 +90,7 @@ add_custom_command(
 	TARGET man 
 	COMMAND sed
 	"s/VERSION/${styx_VERSION_MAJOR}.${styx_VERSION_MINOR}/g"
-		< ${CMAKE_CURRENT_SOURCE_DIR}/styx.1
+		< ${CMAKE_CURRENT_SOURCE_DIR}/docs/styx.1
 		> ${CMAKE_CURRENT_BINARY_DIR}/styx.1
 	OUTPUTS ${CMAKE_CURRENT_BINARY_DIR}/styx.1 )
 
@@ -99,7 +99,7 @@ install( FILES ${CMAKE_CURRENT_BINARY_DIR}/styx.1
 
 ### terminfo
 
-install(CODE "execute_process( COMMAND tic -sx ${CMAKE_CURRENT_SOURCE_DIR}/styx.info )")
+install(CODE "execute_process( COMMAND tic -sx ${CMAKE_CURRENT_SOURCE_DIR}/docs/styx.info )")
 
 
 
