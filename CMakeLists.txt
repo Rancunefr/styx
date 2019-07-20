@@ -73,6 +73,8 @@ target_link_libraries ( "styx" m util
                         ${Fontconfig_LIBRARIES} 
                         ${X11_Xft_LIB} )
 
+target_compile_definitions( "styx" PRIVATE _XOPEN_SOURCE=600)
+
 ### Install targets
 
 install( TARGETS "styx"
