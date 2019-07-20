@@ -1,6 +1,6 @@
 ### CMake file for styx
 ###
-###   -  2010: Initial version <druon@lirmm.fr>
+###   -  2019: Initial version <glaconbleu@codices.org>
 ###
 ###
 ###############################################################################
