@@ -1,0 +1,9 @@
+#ifndef STYX_CONFIG_H
+#define STYX_CONFIG_H
+
+
+#define STYX_VERSION_MAJOR @styx_VERSION_MAJOR@
+#define STYX_VERSION_MINOR @styx_VERSION_MINOR@
+#define STYX_VERSION "@styx_VERSION_MAJOR@.@styx_VERSION_MINOR"
+
+#endif

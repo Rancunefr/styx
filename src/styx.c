@@ -15,6 +15,8 @@
 #include <sys/wait.h>
 #include <termios.h>
 #include <unistd.h>
+
+#define _XOPEN_SOURCE 600
 #include <wchar.h>
 
 #include "styx.h"

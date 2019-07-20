@@ -19,6 +19,7 @@ static char *argv0;
 #include "arg.h"
 #include "styx.h"
 #include "win.h"
+#include "config_cmake.h"
 
 /* types used in config.h */
 typedef struct {
@@ -2112,7 +2113,7 @@ main(int argc, char *argv[])
 		opt_embed = EARGF(usage());
 		break;
 	case 'v':
-		die("%s " VERSION "\n", argv0);
+		die("%s " STYX_VERSION "\n", argv0);
 		break;
 	default:
 		usage();
