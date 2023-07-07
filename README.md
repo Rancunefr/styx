@@ -5,7 +5,7 @@ Styx is a simple X terminal, based on st.
 
 ## Build/Install Instructions
 
-- git clone git@github.com:GlaconBleu/styx.git
+- git clone https://github.com/Rancunefr/styx
 - cd styx
 - cd build
 - cmake ..
